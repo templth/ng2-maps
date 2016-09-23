@@ -1,3 +1,10 @@
 <h1>
-  
+  {{title}}
 </h1>
+
+<map>
+	<layer *ngIf="toggle" [prop]="prop" (click)="layerClicked()"></layer>
+</map>
+
+<div (click)="toggleLayer()">Toggle layer</div>
+<div (click)="updateProp()">Update prop</div>
